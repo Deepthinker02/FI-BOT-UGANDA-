@@ -1,0 +1,11 @@
+[build]
+command = "npm run build"  # Command to build the project (if applicable)
+publish = "public"  # Directory to publish
+
+[functions]
+directory = "netlify/functions"  # Directory for Netlify Functions
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
